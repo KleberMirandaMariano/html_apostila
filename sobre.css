@@ -1,3 +1,9 @@
+#cabecalho{
+    color: white;
+    text-align: center;
+}
+
+
 body
 {
     color: #333333;
@@ -21,18 +27,24 @@ p{
     padding: 0 45px;
     text-indent: 45px;
 }
-figure
-{
-    background-color: #f2eded;
-    border: 1px solid #ccc;
+#centro-distribucao{
+    background-color: #636161;
+    border: 10px solid #ccc;
     text-align: center;
     padding: 15px;
-    margin: 30px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
 }
 figcaption
 {
     font-style: italic;
     margin-top: 10px;
 }
-
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+    }
 
