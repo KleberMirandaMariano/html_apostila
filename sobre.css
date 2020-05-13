@@ -27,15 +27,19 @@ p{
     padding: 0 45px;
     text-indent: 45px;
 }
-#centro-distribucao{
-    background-color: #636161;
+figure{
+    background-color: #F2EDED;
     border: 10px solid #ccc;
     text-align: center;
     padding: 15px;
-    margin: auto;
+    margin: 30PX;
+    
+}    
+#centro-distribucao{
     margin-left: auto;
     margin-right: auto;
     width: 550px;
+    
 }
 figcaption
 {
