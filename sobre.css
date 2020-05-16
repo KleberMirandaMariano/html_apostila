@@ -29,23 +29,34 @@ p{
 }
 figure{
     background-color: #F2EDED;
-    border: 10px solid #ccc;
+    border: 1px solid #ccc;
     text-align: center;
     padding: 15px;
     margin: 30PX;
     
 }    
-#centro-distribucao{
+#centro{
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 550px;   
     
 }
+#pelho{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
 figcaption
 {
     font-style: italic;
     margin-top: 10px;
 }
+#rodape{
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
 #rodape img {
     margin-right: 30px;
     vertical-align: middle;
