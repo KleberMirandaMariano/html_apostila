@@ -61,5 +61,31 @@ figcaption
     margin-right: 30px;
     vertical-align: middle;
     width: 94px;
-    }
+}
 
+.container{
+    margin-right: auto;
+    margin-left: auto;
+}
+.sacola{
+    background-image: url(imagens/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 20px;
+}
+.menu-opcoes ul{
+    font-size: 15px;
+}
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+}
+.menu-opcoes a{
+    color: #003366;
+    text-align: center;
+}
