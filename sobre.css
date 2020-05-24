@@ -4,6 +4,7 @@
 }
 
 
+
 body
 {
     color: #333333;
@@ -13,11 +14,11 @@ body
     margin-right: auto;
     width: 940;
 }
-h1
-{
-    background-color: #aca9a9;
-    padding: 10px;    
+
+.sub-titulo{
+    background-color: #777;
 }
+
 h2
 {
     border-bottom: 2px solid #333333;
@@ -63,29 +64,3 @@ figcaption
     width: 94px;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
-}
-.sacola{
-    background-image: url(imagens/sacola.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    padding-top: 20px;
-}
-.menu-opcoes ul{
-    font-size: 15px;
-}
-.menu-opcoes ul li{
-    display: inline;
-    margin-left: 20px;
-}
-.menu-opcoes a{
-    color: #003366;
-    text-align: center;
-}
