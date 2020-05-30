@@ -7,7 +7,8 @@
     <title>Mirror Fashion</title>
 
         <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/produtos.css">
     </head>
     <body>
         <header class="container">
@@ -28,6 +29,7 @@
             </nav>
 
         </header>
+        <div class="container">
             <div class="produto">
                 <h1>Fuzzy cardigan</h1>
                 <p>por apenas 129,90</p>
@@ -52,10 +54,19 @@
                         </label>
                     </fieldset>
 
+                    <fieldset class="tamanhos">
+                        <legend>Escolha o tamanho:</legend>
+
+                        <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+                    </fieldset>
+
                     <button class="comprar">Comprar</button>
                 </form>
 
             </div>
+
+        </div>
+            
         
 
         <footer>
