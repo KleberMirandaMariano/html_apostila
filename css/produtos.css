@@ -13,6 +13,23 @@
     cursor: pointer;
 }
 
+
+/*
+.tamanhos{
+    
+    display: block;
+
+    
+    
+    height: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top:290px;
+    
+}
+*/
+
+
 label[for=verde]::after{
     background-color: #33CC66;
     left: 0;
@@ -79,13 +96,7 @@ label[for=azul]::after{
     text-transform: uppercase;
     
 }
-/*
-.tamanhos{
-    display: block;
-    font: bold 0.9em/2.5 Arial;
-    text-transform: uppercase;
-}
-*/
+
 .comprar{
     background: rgb(95, 93, 102);
     border:none;
@@ -140,3 +151,59 @@ label[for=azul]::after{
     }
 }
 
+.detalhes{
+    padding: 2em 0;
+
+}
+
+.detalhes h2{
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+.detalhes p{
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+}
+
+@media(min-width: 500px){
+    .detalhes{
+        font-size: 1.2em;
+    }
+}
+
+
+table{
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+thead{
+    background-color: #999;
+}
+thead th{
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+td{
+    padding: 0.3em;
+}
+
+tr:nth-child(2n){
+    background-color: #CCC;
+}
+td:first-child{
+    font-style: italic;
+}
+
+.produto-back{
+    background-color: #F2F2F2;
+    margin-top: 1em;
+    border-top: 2px solid #CCC;
+}
+.cores label img{
+    border: 2px solid #CCC;
+}
