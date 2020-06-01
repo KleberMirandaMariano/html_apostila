@@ -14,25 +14,10 @@
 }
 
 
-/*
-.tamanhos{
-    
-    display: block;
-
-    
-    
-    height: 50px;
-    box-sizing: border-box;
-    position: absolute;
-    top:290px;
-    
-}
-*/
-
-
 label[for=verde]::after{
     background-color: #33CC66;
     left: 0;
+    
     
 }
 
@@ -148,6 +133,9 @@ label[for=azul]::after{
         margin: 1em 0;
         min-width: 240px;
         width: 45%;
+    }
+    .detalhes p{
+        text-align: justify;
     }
 }
 
