@@ -6831,4 +6831,7 @@ button.close {
     display: none !important;
   }
 }
+.form-control:invalid{
+  border: 1px solid #CC0000;
+}
 /*# sourceMappingURL=bootstrap.css.map */
