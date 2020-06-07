@@ -19,91 +19,74 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
+                        <div class="thumbnail card mb-3">
+                            <div class="card-header">
+                                <h2 class="thumbnail mb-3">Sua compra</h2>
+                            </div>
+                            <div class="card-body">
+                                <img src="imagens/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail mb-3">
+                                <dl class="thumbnail mb-3">
+                                    <dt>Produto</dt>
+                                    <dd>Fuzzy Cardigan</dd>
                         
-                    </div>
-                </div>
-                <div class="thumbnail card mb-3">
-                    <div class="card-header">
-                        <h2 class="thumbnail mb-3">Sua compra</h2>
-                    </div>
-                    <div class="card-body">
-                        <img src="imagens/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail mb-3">
-                        <dl class="thumbnail mb-3">
-                            <dt>Produto</dt>
-                            <dd>Fuzzy Cardigan</dd>
-                
-                            <dt>Cor</dt>
-                            <dd>Verde</dd>
-                
-                            <dt>Tamanho</dt>
-                            <dd>40</dd>
-                
-                            <dt>Preço</dt>
-                            <dd>R$ 129,90</dd>
-                        </dl>
-                    </div>
-                </div>
-                <form>
-                    <fieldset>
-                        <legend>Dados pessoais</legend>
-
-                        <div class="form-group">
-                            <label for="nome">Nome completo</label>
-                            <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                                    <dt>Cor</dt>
+                                    <dd>Verde</dd>
+                        
+                                    <dt>Tamanho</dt>
+                                    <dd>40</dd>
+                        
+                                    <dt>Preço</dt>
+                                    <dd>R$ 129,90</dd>
+                                </dl>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
+                                
+                    </div>                  
+                    <form class="col-md-8">
+                        <form>
+                            <fieldset>
+                                <legend>Dados pessoais</legend>
+        
+                                <div class="form-group">
+                                    <label for="nome">Nome completo</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+                                </div>
+        
+                                <div class="form-group custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                                    <label class="custom-control-label" for="newsletter">
+                                        Quero receber newsletter da Mirror Fashion
+                                    </label>
+                                </div>
+                            </fieldset>
                             
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
-                                </div>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="cpf">CPF</label>
-                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
-                        </div>
-
-                        <div class="form-group custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
-                            <label class="custom-control-label" for="newsletter">
-                                Quero receber newsletter da Mirror Fashion
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Cartão de crédito</legend>
-
-                        <div class="form-group">
-                            <label for="numero-cartao">Número - CVV</label>
-                            <input type="text" class="form-control" id="numero-cartao" nome="numero-cartao">
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="bandeira-cartao">Bandeira</label>
-                                </div>
-                                <select class="custom-select" id="bandeira-cartao">
-                                    <option disabled selected>Selecione um opçao...</option>
-                                    <option value="masater">Mastercard</option>
-                                    <option value="visa">VISA</option>
-                                    <option value="amex">American Express</option>
-                                </select>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <button type="submit" class="btn btn-primary">
-                        <span class="oi oi-thumb-up"></span>
-                        Confirma Pedido
-                    </button>
-                </form>        
+        
+                            <button type="submit" class="btn btn-primary">
+                                <span class="oi oi-thumb-up"></span>
+                                Confirma Pedido
+                            </button>
+                        </form>
+                        
+                    </form>
+                </div>
             </div>
+
     </body>
 </html>
 
