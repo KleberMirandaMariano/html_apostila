@@ -1137,9 +1137,11 @@ img {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  max-width: 100%;
-  height: auto;
+    
 }
+
+
+
 .img-circle {
   border-radius: 50%;
 }
@@ -1269,6 +1271,7 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+    
 }
 h3,
 .h3 {
@@ -5032,9 +5035,14 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
+  margin-left: 17px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: inherit;
   background-color: #eeeeee;
 }
@@ -5059,11 +5067,22 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
+
+
+
+
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
+    margin-left: 105px;
+    margin-right: 104px;
   }
+
+  
+
+
+
   .container .jumbotron,
   .container-fluid .jumbotron {
     padding-right: 60px;
@@ -5077,15 +5096,29 @@ a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  margin-top: 1px;
   line-height: 1.42857143;
-  background-color: #fff;
+  background-color:#fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
+
+.card-header h2{
+  background-color:#EEEEEE;
+}
+
+.thumbnail h2{
+  text-align: center;
+}
+
+.card-body dl{
+  text-align: justify;
+}
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;
@@ -6834,4 +6867,6 @@ button.close {
 .form-control:invalid{
   border: 1px solid #CC0000;
 }
+
+
 /*# sourceMappingURL=bootstrap.css.map */
