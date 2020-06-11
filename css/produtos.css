@@ -13,6 +13,19 @@
     cursor: pointer;
 }
 
+.tamanhos output{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+
+    border:3px solid #666;
+    border-radius: 50%;
+    color: #555
+
+}
+
 
 label[for=verde]::after{
     background-color: #33CC66;
