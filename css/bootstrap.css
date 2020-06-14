@@ -9,10 +9,14 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+
+
 body {
   margin: 0;
   padding-top: 55px;
 }
+
 article,
 aside,
 details,
@@ -4358,6 +4362,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  width: 940;
+  text-indent: 109px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4403,11 +4409,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  
 }
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  padding-inline-end: 40px;
+  
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
