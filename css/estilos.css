@@ -6,6 +6,10 @@
     
 }
 
+figcaption{
+    font-size: 13px;
+}
+
 .painel li:nth-child(n+7){
     display: none;
 }
@@ -219,6 +223,7 @@ header{
     text-transform: uppercase;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0,8);
     margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
     
 }
 
@@ -238,17 +243,20 @@ header{
 .novidades{
     background: linear-gradient(#F5DCDC, #BEBEF4);
     float: left;
+    
 }
 
 .mais-vendidos{
     background: linear-gradient(#DCDCF5, #F4BEBE);
     float: right;
+    
 }
 
 body{
     color:#333333;
-    font-family: "Luciada Sans Unicode","Lucida Grande", sans-serif;
+    font-family: 'Montserrat', sans-serif;    
 }
+
 
 footer{
     clear: both;
