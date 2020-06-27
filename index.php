@@ -14,24 +14,7 @@
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
-        <header class="container">
-            <!--[if	lt	IE	9]>				<script	src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>		<![endif]-->
-            <h1><img class="logotipo" src="imagens/logo.png" alt="Mirror Fashion"></h1>
-            <p class="sacola">
-                Nenhum item na sacola de compras
-            </p>
-
-            <nav class="menu-opcoes">
-                <ul>
-                    <li><a href="#">Sua Conta</a></li>
-                    <li><a href="#">Lista de Desejos</a></li>
-                    <li><a href="#">Cartão Fidelidade</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#">Ajuda</a></li>
-                </ul>
-            </nav>
-
-        </header>
+        <?php include ("cabecalho.php"); ?>
         <div class="container destaque">
 
             <section class="busca">
@@ -322,20 +305,11 @@
             <button type="button">Mostrar mais</button>
             </section>
         </div>
-        <footer>
-            <div class="container">
-                <img src="imagens/logo-rodape.png" alt="Logo da Mirror Fashion ">
 
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/mirrorfashion">Facebook</a></li>
-                    <li><a href="https://twitter.com/mirrorfashion">Twitter</a></li>
-                    <li><a href="https://plus.google.com/mirrorfashion">Google</a></li>
-                </ul>
-
-            </div>
-        </footer>
+        
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/banner.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
+        <?php include ("rodape.php"); ?>
     </body>
 </html>

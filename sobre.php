@@ -5,31 +5,15 @@
         <title> Sobre a Mirror Fashion</title>
         <link rel="stylesheet" href="sobre.css">
     </head>
-    <header class="container">
-        <link rel="stylesheet" href="css/estilos.css">
-        <!--[if	lt	IE	9]>				<script	src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>		<![endif]-->
-        <h1><img class="logotipo" src="imagens/logo.png" alt="Mirror Fashion"></h1>
-         <p class="sacola">
-            Nenhum item na sacola de compras
-        </p>
-        
-        <nav class="menu-opcoes">
-            <ul>
-                <li><a href="#">Sua Conta</a></li>
-                <li><a href="#">Lista de Desejos</a></li>
-                <li><a href="#">Cartão Fidelidade</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="#">Ajuda</a></li>
-                </ul>
-        </nav>
-    </header>
+
     <body>
+    <?php include ("cabecalho.php"); ?>   
     <section class="container">
         <article>
             <h1 class="sub-titulo">A Mirror Fashion</h1>
         <p>           
             A <strong>Mirror Fashion</strong>  é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
-            Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
+            Fundada há <?php print date ("Y") - 1932; ?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
             participação em 118 deles.
         </p>
         <p>
@@ -37,8 +21,7 @@
             distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição:
             <a href="https://maps.google.com.br/?q=Jacarezinho"> Jacarezinho, no Paraná</a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58692.97053520256!2d-50.00335840524649!3d-23.158859180226475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c026544d26f253%3A0xc66dac11dad56f73!2sJacarezinho%2C%20PR%2C%2086400-000!5e0!3m2!1spt-BR!2sbr!4v1592964982859!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+            
         </p>
         <figure id="centro">
             <img src="imagens\centro-distribuicao.png" alt="Foto do centro de distribução da Mirror Fashion">
@@ -99,18 +82,7 @@
         </ul>
         </article>
     </section>       
-        <footer>
-            <div class="container">
-                <img src="imagens/logo-rodape.png" alt="Logo da Mirror Fashion ">
-
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/mirrorfashion">Facebook</a></li>
-                    <li><a href="https://twitter.com/mirrorfashion">Twitter</a></li>
-                    <li><a href="https://plus.google.com/mirrorfashion">Google</a></li>
-                </ul>
-
-            </div>
-        </footer>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </body>   
+        <?php include ("rodape.php"); ?>
+        
+    </body> 
 </html>
