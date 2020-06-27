@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mirror Fashion</title>
-    
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilos.css">
-
-</head>
-<body>
-    <?php include ("cabecalho.php"); ?>
-    <body>
+    <?php 
+        $cabecalho_css = '<link rel="stylesheet" href="css/produtos.css">';
+        $cabecalho_title = "Produto da Mirror Fashion";
+        include ("cabecalho.php");
+    ?>
         <div class="produto-back">
             <div class="container">
                 <div class="produto">
@@ -85,10 +76,6 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            
+            </div>            
         </div>
-    </body>
     <?php include ("rodape.php"); ?>    
-</body>
-</html>

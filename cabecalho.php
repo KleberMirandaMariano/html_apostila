@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mirror Fashion</title>
+    <title><?php print $cabecalho_title; ?></title>
+
+    <?php print @$cabecalho_css; ?>
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">

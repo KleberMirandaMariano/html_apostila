@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Mirror Fashion</title>
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Montserrat:ital@1&family=Pacifico&family=Pangolin&display=swap');
             </style>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cormorant+Garamond:ital,wght@1,300&family=Pacifico&display=swap');
         </style>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-    <body>
-        <?php include ("cabecalho.php"); ?>
+
+    
+        <?php 
+            $cabecalho_css = '<link rel="stylesheet" href="css/style.min.css">';
+            $cabecalho_title = "Mirror fashion";
+            include ("cabecalho.php"); 
+        ?>
         <div class="container destaque">
 
             <section class="busca">
@@ -311,5 +308,4 @@
         <script type="text/javascript" src="js/banner.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <?php include ("rodape.php"); ?>
-    </body>
-</html>
+    

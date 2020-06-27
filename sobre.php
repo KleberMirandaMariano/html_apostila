@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title> Sobre a Mirror Fashion</title>
-        <link rel="stylesheet" href="sobre.css">
-    </head>
 
-    <body>
-    <?php include ("cabecalho.php"); ?>   
+    <?php 
+        $cabecalho_css = '<link rel="stylesheet" href="sobre.css">';
+        $cabecalho_title = "Sobre a Mirror Fashion";
+        include ("cabecalho.php"); 
+    ?>   
     <section class="container">
         <article>
             <h1 class="sub-titulo">A Mirror Fashion</h1>
@@ -84,5 +80,4 @@
     </section>       
         <?php include ("rodape.php"); ?>
         
-    </body> 
-</html>
+
