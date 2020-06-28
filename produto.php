@@ -1,4 +1,8 @@
-    <?php 
+
+   <?php 
+        $conexao = mysqli_connect("127.0.0.1" , "root" , "" , "produtos");
+        $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
+        $produto = mysqli_fetch_array($dados);
         $cabecalho_css = '<link rel="stylesheet" href="css/produtos.css">';
         $cabecalho_title = "Produto da Mirror Fashion";
         include ("cabecalho.php");
@@ -6,10 +10,14 @@
         <div class="produto-back">
             <div class="container">
                 <div class="produto">
-                    <h1>Fuzzy cardigan</h1>
-                    <p>por apenas 129,90</p>
+                    <h1><?= $produto['nome'] ?></h1>
+                    <p>por apenas<?= $produto['preco'] ?></p>
     
-                    <form>
+                    <form action="checkout.php" method="POST">
+                        <input type="hidden" name="nome" value="Fuzzy Cardigan">
+                        <input type="hidden" name="preco" value="129,90">
+                        <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+
                         <fieldset class="tamanhos">
                             <legend>Escolha o tamanho:</legend>
     
@@ -21,17 +29,17 @@
     
                             <input type="radio" name="cor" value="verde" id="verde" checked>
                             <label for="verde">
-                                <img src="imagens/produtos/foto1-verde.png" alt="Produto na cor verde">
+                                <img src="imagens/produtos/foto<?= $produto['id'] ?>-verde.png" alt="Produto na cor verde">
                             </label>
     
                             <input type="radio" name="cor" value="rosa" id="rosa" checked>
                             <label for="rosa">
-                                <img src="imagens/produtos/foto1-rosa.png" alt="Produto na cor rosa">
+                                <img src="imagens/produtos/foto<?= $produto['id'] ?>-rosa.png" alt="Produto na cor rosa">
                             </label>
     
                             <input type="radio" name="cor" value="azul" id="azul" checked>
                             <label for="azul">
-                                <img src="imagens/produtos/foto1-azul.png" alt="Produto na cor azul">
+                                <img src="imagens/produtos/foto<?= $produto['id'] ?>-azul.png" alt="Produto na cor azul">
                             </label>
                         </fieldset>
                         
@@ -44,10 +52,7 @@
     
                     <h2>Detalhes do produto</h2>
     
-                    <p>Esse é o melhor casaco de Cardigã que você já viu. Excelente 
-                    material italiano com estampa desenhada pelos artesãos da 
-                    comunidade de Krotor nas ilhas gregas. Compre já e receba hoje 
-                    mesmo pela nossa entrega ajato.</p>
+                    <p><?= $produto['descricao'] ?></p>
     
                     <table>
                         <thead>

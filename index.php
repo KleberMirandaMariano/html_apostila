@@ -1,3 +1,8 @@
+        <?php 
+            $cabecalho_css = '<link rel="stylesheet" href="css/style.min.css">';
+            $cabecalho_title = "Mirror fashion";
+            include ("cabecalho.php"); 
+        ?>
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Montserrat:ital@1&family=Pacifico&family=Pangolin&display=swap');
@@ -7,11 +12,6 @@
         </style>
 
     
-        <?php 
-            $cabecalho_css = '<link rel="stylesheet" href="css/style.min.css">';
-            $cabecalho_title = "Mirror fashion";
-            include ("cabecalho.php"); 
-        ?>
         <div class="container destaque">
 
             <section class="busca">
