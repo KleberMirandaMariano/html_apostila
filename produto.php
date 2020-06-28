@@ -4,7 +4,7 @@
         $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
         $produto = mysqli_fetch_array($dados);
         $cabecalho_css = '<link rel="stylesheet" href="css/produtos.css">';
-        $cabecalho_title = "Produto da Mirror Fashion";
+        $cabecalho_title = $produto['nome'];
         include ("cabecalho.php");
     ?>
         <div class="produto-back">
@@ -14,8 +14,8 @@
                     <p>por apenas<?= $produto['preco'] ?></p>
     
                     <form action="checkout.php" method="POST">
-                        <input type="hidden" name="nome" value="Fuzzy Cardigan">
-                        <input type="hidden" name="preco" value="129,90">
+                        <input type="hidden" name="nome" value="<?= $produto['nome'] ?>">
+                        <input type="hidden" name="preco" value="<?= $produto['preco'] ?>">
                         <input type="hidden" name="id" value="<?= $produto['id'] ?>">
 
                         <fieldset class="tamanhos">
