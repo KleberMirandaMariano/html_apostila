@@ -1,8 +1,9 @@
 
    <?php 
-        $conexao = mysqli_connect("127.0.0.1" , "root" , "" , "produtos");
+        $conexao = mysqli_connect("127.0.0.1", "root", "", "wd43");
         $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
         $produto = mysqli_fetch_array($dados);
+        
         $cabecalho_css = '<link rel="stylesheet" href="css/produtos.css">';
         $cabecalho_title = $produto['nome'];
         include ("cabecalho.php");
