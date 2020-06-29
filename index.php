@@ -1,7 +1,7 @@
         <?php 
             $cabecalho_css = '<link rel="stylesheet" href="css/style.min.css">';
             $cabecalho_title = "Mirror fashion";
-            include ("cabecalho.php"); 
+            include ("cabecalho.php");
         ?>
 
         <style>
@@ -100,7 +100,7 @@
             <section class="painel novidades">
             <h2>Novidades</h2>
             <ol>
-            <li>
+                <li>
                 <a href="produto.html">
                        <figure>
                             <img src="imagens/produtos/miniatura1.png" alt="miniatura1">
@@ -183,6 +183,7 @@
                 <li>
                     <a href="produto.html">
                     <a href="produtp.php?id=<?= $produto['id'] ?>">
+                    <a href="produto.php?id= $produto['id'] ?>">
                         <figure>
                             <img src="imagens/produtos/miniatura5.png" alt="miniatura5">
                             <figcaption>Fuzz Cardigan Azul R$ 129,90</figcaption>
@@ -191,6 +192,9 @@
                                 alt="<?= $produto['nome'] ?>">
                             <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
                         </figure>    
+                                 alt="<?= $produto['nome'] ?>">
+                            <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>        
+                        </figure>
                     </a>
                 </li>
                 <li>
@@ -201,6 +205,7 @@
                         </figure>
                     </a>        
                 </li> 
+                
             </ol>
             <button type="button">Mostrar mais</button>
             </section>
